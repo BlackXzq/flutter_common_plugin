@@ -51,8 +51,20 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Running on: $_platformVersion\n'),
+            SizedBox(
+              height: 50,
+            ),
+            TextButton(
+                onPressed: () {
+                  FlutterCommonPlugin.launch("https://www.baidu.com/");
+                },
+                child: Text("打开百度"))
+          ],
+        )),
       ),
     );
   }

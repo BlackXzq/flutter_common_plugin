@@ -8,7 +8,7 @@ class DeviceInfo: NSObject {
             "appVersion": getAppVersion(),
             "buildNum": getAppBuildCode(),
             "brandInfo": getBrandInfo(),
-            "platformVersion": getPlatform() + getOSVerison(),
+            "platformVersion": getPlatform() + " " + getOSVerison(),
             "appName": getAppDisplayName(),
             "bundleIdentifier": getBundleIdentifier()
         ]

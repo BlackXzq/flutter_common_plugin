@@ -15,4 +15,7 @@ class FCPConfig {
   /// method
   /// 获取app信息
   static const String getAppInfo = "getAppinfo";
+
+  /// 打开系统浏览器，跳转外部链接
+  static const String launchUrl = "launchUrl";
 }

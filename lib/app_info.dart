@@ -42,7 +42,7 @@ class IosAppInfo {
     required this.bundleIdentifier,
   });
 
-  static IosAppInfo fromMap(Map<String, dynamic> map) {
+  static IosAppInfo fromMap(Map<dynamic, dynamic> map) {
     return IosAppInfo(
       appVersion: map['appVersion'] ?? '',
       buildNum: map['buildNum'] ?? '',
@@ -91,7 +91,7 @@ class AndriodAppInfo {
     required this.bundleIdentifier,
   });
 
-  static AndriodAppInfo fromMap(Map<String, dynamic> map) {
+  static AndriodAppInfo fromMap(Map<dynamic, dynamic> map) {
     return AndriodAppInfo(
       appVersion: map['appVersion'] ?? '',
       buildNum: map['buildNum'] ?? '',
